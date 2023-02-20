@@ -1,3 +1,2 @@
-guides/tmpd8q_t5lf/*
-guides/guides/__pycache__/__init__.cpython-38.pyc
-guides/guides/__pycache__/assets.cpython-38.pyc
+guides/tmp*
+guides/guides/__pycache__/*
