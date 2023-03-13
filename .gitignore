@@ -1,2 +1,6 @@
 guides/tmp*
 guides/guides/__pycache__/*
+
+*/target/
+*/dbt_packages/
+*/logs/
