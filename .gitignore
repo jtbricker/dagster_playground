@@ -4,3 +4,4 @@ guides/guides/__pycache__/*
 */target/
 */dbt_packages/
 */logs/
+*/*.egg-info

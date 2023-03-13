@@ -1,25 +1,7 @@
--- Refer to Using dbt with Dagster, part one for info about this file:
--- https://docs.dagster.io/integrations/dbt/using-dbt-with-dagster/part-one
+# /tutorial_template/jaffle_shop/models/staging/stg_customers.sql
 
-with source as (
-
-    {#-
-    Normally we would select from the table here, but we are using seeds to load
-    our data in this project
-    #}
-    select * from {{ ref('raw_customers') }}
-
-),
-
-renamed as (
-
-    select
-        id as customer_id,
-        first_name,
-        last_name
-
-    from source
-
-)
-
-select * from renamed
+select
+    id as customer_id,
+    first_name,
+    last_name
+from {{ source('jaffle_shop', 'customers_raw') }}
