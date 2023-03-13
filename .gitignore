@@ -7,3 +7,5 @@ guides/guides/__pycache__/*
 */*.egg-info
 *.pyc
 *.db
+tutorial_dbt_dagster/tutorial_template/tmp*
+*.duckdb
