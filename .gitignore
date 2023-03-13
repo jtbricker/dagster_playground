@@ -5,3 +5,5 @@ guides/guides/__pycache__/*
 */dbt_packages/
 */logs/
 */*.egg-info
+*.pyc
+*.db
